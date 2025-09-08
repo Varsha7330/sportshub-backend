@@ -205,7 +205,7 @@ async function initializeDefaultEvents() {
 app.use(cors({
     origin: [
         'http://localhost:3000',
-        'https://sportsmanagementsystem.netlify.app'
+        'https://sportshub-system.netlify.app/'
     ],
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
     allowedHeaders: ['Content-Type', 'Accept', 'Authorization'],
