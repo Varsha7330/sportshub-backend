@@ -24,7 +24,7 @@ const app = express();
 const port = process.env.PORT || 3000;
 
 // --- MongoDB Atlas Configuration ---
-const MONGODB_URI = 'mongodb+srv://sportshub:varsha123@sportshub.utcj1ma.mongodb.net/sportshub?retryWrites=true&w=majority&appName=sportshub';
+const MONGODB_URI = 'mongodb+srv://sportshub:sportshub@sportshub.utcj1ma.mongodb.net/sportsHubAdmin?retryWrites=true&w=majority&appName=sportshub';
 const DB_NAME = 'sportshub';
 
 let db;
