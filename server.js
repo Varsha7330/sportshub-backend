@@ -24,8 +24,8 @@ const app = express();
 const port = process.env.PORT || 3000;
 
 // --- MongoDB Atlas Configuration ---
-const MONGODB_URI = 'mongodb+srv://sportsHubAdmin:varsha123@sportshub.utcj1ma.mongodb.net/sports-hub-db?retryWrites=true&w=majority&appName=sportshub';
-const DB_NAME = 'sportsHubAdmin';
+const MONGODB_URI = 'mongodb+srv://sportsHubAdmin:Adarsh6708@csports-hub-cluster.on9cz2d.mongodb.net/sports-hub-db?retryWrites=true&w=majority&appName=Csports-hub-cluster';
+const DB_NAME = 'sports-hub-db';
 
 let db;
 let usersCollection;
@@ -202,11 +202,13 @@ async function initializeDefaultEvents() {
 }
 
 // --- Middleware ---
+
 app.use(cors({
     origin: [
-        'http://localhost:3000',
-        'https://sportshub-system.netlify.app/'
-    ],
+    'http://localhost:3000',
+    'https://sportsmanagementsystem.netlify.app',
+    'https://sportshub-system.netlify.app'  // Add this
+],
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
     allowedHeaders: ['Content-Type', 'Accept', 'Authorization'],
     credentials: true
