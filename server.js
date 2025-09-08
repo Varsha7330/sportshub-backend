@@ -203,13 +203,13 @@ async function initializeDefaultEvents() {
 
 // --- Middleware ---
 app.use(cors({
-    origin: [
-        'http://localhost:3000',
-        'https://sportshub-system.netlify.app/'
-    ],
-    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
-    allowedHeaders: ['Content-Type', 'Accept', 'Authorization'],
-    credentials: true
+  origin: [
+    'http://localhost:3000',               // For your local development frontend
+    'https://sportshub-system.netlify.app' // Your deployed Netlify frontend
+  ],
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  allowedHeaders: ['Content-Type', 'Authorization'],
+  credentials: true
 }));
 
 app.use(express.json());
